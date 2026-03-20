@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "package": "dev.crystal.client.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "MixinMinecraftClient",
+    "MixinClientPlayerEntity",
+    "MixinGameRenderer",
+    "MixinInGameHud",
+    "MixinEntity",
+    "MixinKeyboard",
+    "MixinClientConnection",
+    "MixinChatScreen"
+  ],
+  "injectors": { "defaultRequire": 1 }
+}

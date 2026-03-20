@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "crystal",
+  "version": "1.0.0",
+  "name": "Crystal Client",
+  "description": "Crystal PvP Client for 1.21.1",
+  "authors": ["Crystal"],
+  "environment": "client",
+  "entrypoints": {
+    "client": ["dev.crystal.client.CrystalClient"]
+  },
+  "mixins": ["crystal.mixins.json"],
+  "accessWidener": "crystal.accesswidener",
+  "depends": {
+    "fabricloader": ">=0.16.5",
+    "minecraft": "~1.21.1",
+    "fabric-api": "*",
+    "java": ">=21"
+  }
+}
