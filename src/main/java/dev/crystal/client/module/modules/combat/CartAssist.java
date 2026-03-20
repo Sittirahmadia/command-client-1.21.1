@@ -128,7 +128,7 @@ public final class CartAssist extends Module {
                 var landed = mc.world.getEntitiesByClass(
                         PersistentProjectileEntity.class,
                         new Box(center.subtract(r, r + 3, r), center.add(r, r, r)),
-                        proj -> proj.isInGround()
+                        proj -> proj.isOnGround()
                                 && proj.getPos().distanceTo(center) <= r + 2.0
                 ).stream().min(Comparator.comparingDouble(
                         proj -> proj.getPos().squaredDistanceTo(center))

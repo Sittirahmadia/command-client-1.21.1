@@ -2,7 +2,6 @@ package dev.crystal.client;
 
 import dev.crystal.client.event.EventBus;
 import dev.crystal.client.gui.ChatCommandHandler;
-import dev.crystal.client.gui.HudRenderer;
 import dev.crystal.client.module.ModuleManager;
 import net.fabricmc.api.ClientModInitializer;
 import net.minecraft.client.MinecraftClient;
@@ -21,7 +20,6 @@ public final class CrystalClient implements ClientModInitializer {
     public EventBus            bus;
     public ModuleManager       modules;
     public ChatCommandHandler  commands;
-    public HudRenderer         hud;
 
     @Override
     public void onInitializeClient() {
@@ -30,7 +28,6 @@ public final class CrystalClient implements ClientModInitializer {
         bus      = new EventBus();
         modules  = new ModuleManager();
         commands = new ChatCommandHandler();
-        hud      = new HudRenderer();
 
         LOG.info("[{}] Loaded {} modules", NAME, modules.getModules().size());
     }
