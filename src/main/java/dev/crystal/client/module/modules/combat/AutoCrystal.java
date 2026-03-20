@@ -262,7 +262,7 @@ public final class AutoCrystal extends Module {
         double horiz = Math.sqrt(Math.pow(target.x - eye.x, 2) + Math.pow(target.z - eye.z, 2));
         float reqPitch = (float) -Math.toDegrees(Math.atan2(dy, horiz));
         // reqPitch is negative when looking down. maxPitch is the downward limit.
-        return reqPitch >= -(float) maxPitch.getValue();
+        return reqPitch >= -maxPitch.floatValue();
     }
 
     /**
